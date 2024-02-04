@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<h1>See-N-Say Storymaker</h1>
+	<div>
+		<button id="GetStudentID">ID</button>
+		<p id="studentID"></p>
+	</div>
+	<section id="Game">
+		<!-- Section with all the buttons for the user to build their story -->
+		<h2>Create Your Story</h2>
+		<div>
+            <button id="noun1">Noun 1</button>
+            <p id="choosenNoun1"></p>
+        </div>
+        <div>
+            <button id="verb">Verb</button>
+            <p id="choosenVerb"></p>
+        </div>
+        <div>
+            <button id="adjective">Adjective</button>
+            <p id="choosenAdjective"></p>
+        </div>
+        <div>
+            <button id="noun2">Noun 2</button>
+            <p id="choosenNoun2"></p>
+        </div>
+        <div>
+            <button id="setting">Setting</button>
+            <p id="choosenSetting"></p>
+        </div>
+	</section>
+	<footer>
+		<!-- Section with playback controls to see or hear the story -->
+		<h2>See Your Story</h2>
+		<button id="playback">Show Story</button>
+		<button id="random">Random Story</button>
+		<button id="reset">Reset</button>
+		<!-- Empty paragraph to display the story -->
+		<p id="story"></p>
+	</footer>
+	<script src="js/storymaker.js"></script>
+</body>
+
+</html>

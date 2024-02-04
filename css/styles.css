@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Set your background color */
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 20px;
+    background-image: url('../img/bgimage.jpg');
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    width:30%;
+}
+button, p {
+    display: block;
+    margin: 10px 0;
+    margin-right: 40%;
+}
+div{
+    display: flex;
+}
+div p{
+    margin-top: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer {
+    margin-top: auto;
+    text-align: center;
+  
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    width: 40%;
+}
+/* Additional styling for buttons and paragraphs */
+button {
+    margin-bottom: 10px;
+    width: 150px; /* Set the button width to 100% */
+    border-radius: 15px;
+    padding: 14px 20px; /* Set the padding for the button */
+    font-size: 18px; /* Set the font size for the button text */
+    background-color: #3498db;
+}
+button:hover {
+    background-color: #5abeff;
+    transition: 0.3s;
+}
+p {
+    margin: 10px 0;
+}
+footer button {
+    width:180px;
+    margin-right: 10px;
+    display: inline-block;
+}
