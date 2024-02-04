@@ -24,7 +24,7 @@ const studentIdP = document.querySelector('#studentID');
 const playbackButton = document.querySelector('#playback');
 const randomButton = document.querySelector('#random');
 const storyP = document.querySelector('#story');
-// Variables for pre-defined arrays
+// predefined arrays for the components and their sounds with them
 let noun1array = ["The dog", "The cat", "The rabbit", "The snake", "The bird"];
 let noun1sounds = ["sounds/dog.mp3", "sounds/cat.mp3", "sounds/rabbit.mp3", "sounds/snake.mp3", "sounds/bird.mp3"];
 let verbarray = ["ran", "jumped", "slept", "ate", "sang"];
@@ -128,7 +128,7 @@ function playback_on_click() {
 
     let audioFiles = [noun1sounds[noun1count - 1], verbsounds[verbcount - 1], adjectivesounds[adjectivecount - 1], noun2sounds[noun2count - 1], settingsounds[settingcount - 1]];
     let index = 0;
-
+    //playing audio
     function playNextAudio() {
         if (index < audioFiles.length) {
             let audio = new Audio(audioFiles[index]);
@@ -154,7 +154,7 @@ function random_on_click() {
     let audioFiles = [noun1sounds[noun1array.indexOf(randomNoun1)], verbarray.indexOf(randomVerb), adjectivearray.indexOf(randomAdjective), noun2array.indexOf(randomNoun2), settingarray.indexOf(randomSetting)];
     storyP.textContent = randomNoun1 + " " + randomVerb + " " + randomAdjective + " " + randomNoun2 + " " + randomSetting;
     let index = 0;
-
+    //playing audio
     function playNextAudio() {
         if (index < audioFiles.length) {
             let audio = new Audio(audioFiles[index]);
